@@ -1,11 +1,28 @@
-# 木桥 3D 搭建参考
+# 木桥 · 两个搭建方案
 
-纯静态站：`index.html` 内嵌模型和脚本，不依赖后端或外部资源。
+纯静态 3D 搭建参考，模型和脚本均内嵌在 `index.html`。可旋转、切换三视角、隐藏构件组、分解观察、按件号选择木条。
 
-- `files/bridge-drawings.pdf`：E2 搭建图纸。
-- `files/bridge-kit.zip`：包含图纸、离线查看器、GLB、STEP、先读我与开源许可的完整资料包。
-- `files/bridge-model.glb`、`files/bridge-model.step`：交换格式模型。
-- `files/read-first.txt`：搭建与打印说明。
-- `THIRD-PARTY-NOTICES.txt`：Three.js MIT 许可。
+默认显示方案二；顶部可切回方案一。两套几何和下料资料必须分别使用。
 
-52 个零件与图纸使用同一套名义几何。几何参考不构成实物承重认证；搭建尺寸与下料以 PDF 标注为准。
+## 方案一：双侧桁架桥
+
+52 个实体构件，名义外尺寸 510 × 73.5 × 95 mm。搭建尺寸、切口与接头以 E2 PDF 为准。
+
+- `files/bridge-drawings.pdf`：方案一 E2 搭建图纸。
+- `files/bridge-kit.zip`：方案一图纸、离线查看器、GLB、STEP、搭建说明与开源许可。
+- `files/bridge-model.glb`、`files/bridge-model.step`：方案一交换格式模型。
+- `files/read-first.txt`：方案一搭建与打印说明。
+
+## 方案二：扇形斜拱 · 全三角支撑
+
+83 个实体构件，名义外尺寸 510 × 66.5 × 98 mm。网页内提供搭建顺序、83 件毛坯和终切说明、12 根原料排料表、每个胶接点的定位。选中木条后可选择显示真实接触面内的紫色限胶区域。
+
+- `files/bridge-v2-model.glb`、`files/bridge-v2-model.step`：方案二交换格式模型。
+- 方案二没有新增 PDF；不得使用方案一 PDF 搭建方案二。
+- 透明承压板和支架只是比赛器具示意，不计入木材或导出模型。
+
+木条截面均为 2.5 × 2.5 mm。屏幕图像不是 1:1 定位模板；轴线端点距离也不等于毛坯长度。几何模型不包含胶厚与手工误差。
+
+网页中的 33 / 40 kg 是用于核算的目标重量，模拟结果不是实测承重。实际表现取决于木材、胶水、节点、支承接触和制作质量。22 g 限重必须实称；下料总长满足 12 根原料并不等于质量已合格。
+
+`THIRD-PARTY-NOTICES.txt` 保留 Three.js MIT 许可。
